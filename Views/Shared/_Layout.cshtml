@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+@await Html.PartialAsync("../Inc/Head.cshtml")
+@await RenderSectionAsync("Css", required: false)
+</head>
+<body>
+    @await Html.PartialAsync("../Inc/Header.cshtml")
+    @RenderBody()
+    @await Html.PartialAsync("../Inc/Footer.cshtml")
+    @await Html.PartialAsync("../Inc/BottomJs.cshtml")
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
